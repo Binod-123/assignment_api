@@ -16,33 +16,28 @@ Admin – admin@example.com
 Buyer – buyer@example.com
  / Buyer@123
 
-Setup Steps I used:
-
-Clone the project
-git clone <repo-url>
-cd <project-folder>
-
+Setup Steps:
 Install required packages
-composer install
+# composer install
 
 Copy environment file
 cp .env.example .env
 
 Generate application key
-php artisan key:generate
+# php artisan key:generate
 
 Update .env file with database details
 
 Install JWT
-composer require tymon/jwt-auth
-php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
-php artisan jwt:secret
+# composer require tymon/jwt-auth
+# php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+# php artisan jwt:secret
 
 Run migrations and seeders
-php artisan migrate --seed
+# php artisan migrate --seed
 
 Start the application
-php artisan serve
+# php artisan serve
 
 API Hit Process (how I tested the APIs):
 
